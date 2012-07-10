@@ -1,0 +1,26 @@
+[% title = 'Mitglied - Karteikarte' %]
+[% FOREACH mitglied IN mitglieder -%]
+<table>
+<tr><td>Nachname</td><td>[% mitglied.nachname %]</td></tr>
+<tr><td>Nachname</td><td>[% mitglied.vorname %]</td></tr>
+<tr><td>ID</td><td>[% mitglied.mid %]</td></tr>
+<tr><td>Geburtstag</td><td>[% mitglied.geburtstag.dmy('.') %]</td></tr>
+<tr><td>Status</td><td>[% mitglied.status %]</td></tr>
+<tr><td>Geschlecht</td><td>[% mitglied.geschlecht %]</td></tr>
+<tr><td>Firma</td><td>[% mitglied.firma %]</td></tr>
+<tr><td>Strasse</td><td>[% mitglied.strasse %]</td></tr>
+<tr><td>Hausnummer</td><td>[% mitglied.hausnummer %]</td></tr>
+<tr><td>Ort</td><td>[% mitglied.Ort %]</td></tr>
+<tr><td>Ortsteil</td><td>[% mitglied.Ortsteil %]</td></tr>
+<tr><td>Eintrittsdatum</td><td>[% mitglied.eintritt.dmy('.') %]</td></tr>
+<tr><td>Austrittsdatum</td><td>[% mitglied.austritt.dmy('.') %]</td></tr>
+<tr><td>Email</td><td>[% mitglied.email %]</td></tr>
+<tr><td>Telefon</td><td>[% mitglied.telefon %]</td></tr>
+<tr><td>Mobil</td><td>[% mitglied.mobil %]</td></tr>
+<tr><td>Fax</td><td>[% mitglied.fax %]</td></tr>
+<tr><td>Bemerkung</td><td>[% mitglied.bemerkung %]</td></tr>
+<tr><td>Kontonummer</td><td>[% mitglied.kontonr %]</td></tr>
+<tr><td>BLZ</td><td>[% mitglied.blz %]</td></tr>
+<tr><td>Kreditinstitut</td><td>[% mitglied.kreditinstitut %]</td></tr>
+</table>
+[% END -%]

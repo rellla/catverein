@@ -1,0 +1,18 @@
+[% title = 'Startseite' %]
+<p>
+[% IF c.user_exists %]
+    <a href="[% c.uri_for('/mitglied') %]">Mitgliederliste</a></br>
+	<a href="[% c.uri_for('/beitragssatz') %]">Beitragssätze</a>
+[% ELSE %]
+    Zur Benutzung des Software bitte anmelden!
+[% END %]
+</p>
+
+<p>
+[% IF c.user_exists %]
+    Du bist als '[% c.user.username %]' angemeldet.
+    Du kannst dich <a href="[% c.uri_for('/logout') %]">hier abmelden.</a>
+[% ELSE %]
+    Zur Benutzung des Software bitte anmelden!
+[% END %]
+</p>

@@ -1,0 +1,25 @@
+[% META title = 'Mitglieder Liste'  -%]
+<table>
+<tr>
+    <th>ID</th>
+    <th>Vorname</th>
+    <th>Nachname</th>
+    <th>Strasse</th>
+    <th>Hausnummer</th>
+    <th>Ort</th>
+    <th>Geburtstag</th>
+    <th>Geschlecht</th>
+</tr>
+[% FOREACH mitglied IN mitglieder -%]
+<tr>
+    <td>[% mitglied.mid %]</td>
+    <td>[% mitglied.vorname %]</td>
+    <td>[% mitglied.nachname %]</td>
+    <td>[% mitglied.strasse %]</td>
+    <td>[% mitglied.hausnummer %]</td>
+    <td>[% mitglied.ort %]</td>
+    <td>[% mitglied.geburtstag %]</td>
+    <td>[% mitglied.geschlecht %]</td>
+</tr>
+[% END -%]
+</table>

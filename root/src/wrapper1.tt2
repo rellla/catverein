@@ -1,0 +1,32 @@
+[% IF no_wrapper %]
+[% content %]
+[% ELSE %]
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>[% title %]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link rel="stylesheet" type="text/css" href="[% c.uri_for('/static/css/style.css')%]">
+<link rel="stylesheet" href="[% c.uri_for('/static/css/flexigrid.css') %]" />
+<script language="javascript" src="[% c.uri_for('/static/js/jquery.js') %]"></script>
+<script language="javascript" src="[% c.uri_for('/static/js/flexigrid.js') %]"></script>
+<script language="javascript" src="[% c.uri_for('/static/js/jquery.form.js') %]"></script>
+</head>
+<body>
+<div class='container'>
+<div class='title'>
+<span class='title'>Mitgliederverwaltung DJK Langenmosen - [% title %]</span>
+<span class='backbutton'><a href="[% c.uri_for('/') %]">Zur Startseite</a></span>
+</div>
+<br style='clear:both;'>
+[%# Status and error messages %]
+<div>
+<span class="message">[% status_msg %]</span>
+<span class="error">[% error_msg %]</span>
+</div>
+<div class='content'>[% content %]</div>
+</div>
+<div class='copyright'>&copy; 2012 Andreas Baierl</div>
+</body>
+</html>
+[% END %]

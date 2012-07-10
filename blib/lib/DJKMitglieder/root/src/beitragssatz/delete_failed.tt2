@@ -1,0 +1,3 @@
+[% title = 'Beitragssätze' %]
+<p>Fehler: Es wurde kein Beitrag gelöscht!</p>
+<p><a href="[% c.uri_for('/beitragssatz') %]">Zurück zur Beitragsliste.</a></p>

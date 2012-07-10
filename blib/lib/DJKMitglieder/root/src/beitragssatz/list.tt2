@@ -1,0 +1,18 @@
+[% title = 'Beitragssätze' %]
+<table>
+<tr><th>ID</th>
+	<th>Bemerkung</th>
+	<th>Betrag</th>
+	<th colspan=2></th>
+</tr>
+[% FOREACH beitrag IN beitraege -%]
+<tr>
+<td>[% beitrag.bid %]</td>
+<td>[% beitrag.bemerkung %]</td>
+<td>[% beitrag.betrag %] €</td>
+<td><a href="[% c.uri_for('/beitragssatz/edit', beitrag.bid) %]">Ändern</a></td>
+<td><a href="[% c.uri_for('/beitragssatz/delete', beitrag.bid) %]">Löschen</a></td>
+</tr>
+[% END -%]
+</table>
+<span><a href="[% c.uri_for('/beitragssatz/add') %]">Neuen Beitrag erstellen</a></span>

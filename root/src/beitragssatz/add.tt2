@@ -1,0 +1,3 @@
+[% USE Dumper %]
+[% title = 'Beitragssätze anpassen' %]
+[% form %]

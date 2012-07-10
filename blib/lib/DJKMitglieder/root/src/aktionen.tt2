@@ -1,0 +1,18 @@
+[%META title = 'Aktionen' %]
+
+<p>
+[% IF c.user_exists %]
+    <a href="[% c.uri_for('/mitglieder/list') %]">Zur Mitgliederliste</a>
+[% ELSE %]
+    Zur Benutzung des Software bitte anmelden!
+[% END %]
+</p>
+
+<p>
+[% IF c.user_exists %]
+    Du bist als '[% c.user.username %]' angemeldet.
+    Du kannst dich <a href="[% c.uri_for('/logout') %]">hier abmelden.</a>
+[% ELSE %]
+    Zur Benutzung des Software bitte anmelden!
+[% END %]
+</p>

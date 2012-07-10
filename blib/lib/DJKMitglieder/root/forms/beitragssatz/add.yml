@@ -1,0 +1,26 @@
+---
+elements:
+  - type: Text
+    name: bemerkung
+    label: Bemerkung
+    constraints:
+      - Required
+      - type: Length
+        min: 1
+        max: 40
+        message: "Laenge zwischen 1 and 40!"
+
+  - type: Text
+    name: betrag
+    label: Betrag
+    constraints:
+      - Required
+      - type: Integer
+      - type: Range
+        min: 0
+        max: 200
+        message: "Hoehe zwischen 0 and 200!"
+
+  - type: Submit
+    name: submit
+    value: Aendern

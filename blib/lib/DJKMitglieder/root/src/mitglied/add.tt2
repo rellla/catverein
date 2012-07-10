@@ -1,0 +1,15 @@
+[% USE Dumper %]
+<link rel="stylesheet" type="text/css" href="[% c.uri_for('/static/css/style.css')%]">
+<script type="text/javascript">
+function form_hide() {
+    var form_div = $('#mitglied_form');
+    form_div.hide();
+}
+</script>
+<div class="header2">[% nameid %]</div> 
+[% IF no_wrapper %]
+[% ELSE %]
+[% title = 'Mitglied ‰ndern' %]
+[% END %]
+[% form %]
+<a href="" onClick="form_hide();">schlieﬂen</a>

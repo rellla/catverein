@@ -1,0 +1,9 @@
+[% title = 'Beitrag erstellen' %]
+
+<form method="post" action="[% c.uri_for('form_add_do') %]">
+<table>
+  <tr><td>Bemerkung:</td><td><input type="text" name="bemerkung"></td></tr>
+  <tr><td>Betrag:</td><td><input type="text" name="betrag"></td></tr>
+</table>
+<input type="submit" name="Submit" value="Submit">
+</form>

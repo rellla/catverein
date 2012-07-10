@@ -1,0 +1,90 @@
+---
+elements:
+  - type: Text
+    name: vorname
+    label: Vorname
+    constraints:
+      - Required
+      - type: Length
+        min: 1
+        max: 40
+        message: "Laenge zwischen 1 and 40!"
+
+  - type: Text
+    name: nachname
+    label: Nachname
+    constraints:
+      - Required
+      - type: Length
+        min: 1
+        max: 40
+        message: "Laenge zwischen 1 and 40!"
+
+  - type: Text
+    name: strasse
+    label: Strasse
+    constraints:
+      - type: Length
+        max: 100
+
+  - type: Text
+    name: hausnummer
+    label: Hausnummer
+    constraints:
+      - type: Length
+        min: 1
+        max: 5
+        message: "Laenge zwischen 1 and 5!"
+
+  - type: Text
+    name: ort
+    label: Ort
+    constraints:
+      - Required
+      - type: Length
+        max: 100
+
+  - type: Text
+    name: ortsteil
+    label: Ortsteil
+    constraints:
+      - Required
+      - type: Length
+        max: 100
+
+  - type: Date
+    name: geburtstag
+    label: Geburtstag
+    day:
+      prefix: "- Tag -"
+    month:
+      prefix: "- Monat -"
+    year:
+      prefix: "- Jahr -"
+      less: 110
+      plus: 0
+    auto_inflate: 1
+
+  - type: Select
+    label: Geschlecht
+    name: geschlecht
+    options:
+    - [ '0', 'maennlich' ]
+    - [ '1', 'weiblich' ]
+
+  - type: Select
+    label: Status
+    name: status
+    options:
+    - [ '1', 'aktiv' ]
+    - [ '3', 'ausgetreten' ]
+    - [ '4', 'verstorben' ]
+
+  - type: Checkbox
+    label: Firma?
+    name: firma
+    value: 1
+
+  - type: Submit
+    name: submit
+    value: Aendern

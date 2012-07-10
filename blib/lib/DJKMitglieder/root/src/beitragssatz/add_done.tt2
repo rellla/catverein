@@ -1,0 +1,3 @@
+[% title = 'Beitragssätze' %]
+<p>Es wurde der Beitrag '[% beitrag.bemerkung %]' in einer Höhe von [% beitrag.betrag %] hinzugefügt.</p>
+<p><a href="[% c.uri_for('/beitragssatz') %]">Zurück zur Beitragsliste.</a></p>
